@@ -1,5 +1,6 @@
 const express = require('express')
-const rootRouter =require('./rest/createApiRouter')()
+const rootRouter = require('./rest/createApiRouter')()
 
-module.export= ()=>express()
+module.exports = ()=>express()
 .use(rootRouter)
+.use(express.static('./public'))

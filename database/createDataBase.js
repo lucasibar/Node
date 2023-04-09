@@ -1,5 +1,5 @@
 const db = {}
 
-module.export= ()=>{
+module.exports = ()=>{
    return db
 }

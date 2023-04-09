@@ -1,5 +1,6 @@
 const { Router } = require('express')
 
-module.export = Router().get('/alumnos', (req,res)=>{
-    res.end('ALUMNOS')
+module.exports = Router().get('/rest/v1/alumnos', (req,res)=>{
+    const{nombre, apellido} = req.body
+    res.end(`Cursos ${nombre} ${apellido}` )
 })
