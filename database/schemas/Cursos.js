@@ -1,12 +1,11 @@
 const mongoose = require('mongoose')
 
-const alumnosSchemas = mongoose.Schema({
+const cursosSchemas = mongoose.Schema({
     nombre: String,
-    apellido: String,
-    presente: Boolean
+    dificil: Boolean
 })
 // alumnosSchemas.methods.saludar = function(){
 //     return `Hola ${this.nombre} ${this.apellido}`
 // }
 
-module.exports = mongoose.model('Alumno', alumnosSchemas)
+module.exports = mongoose.model('Cursos', cursosSchemas)

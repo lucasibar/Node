@@ -1,6 +1,6 @@
 const express = require('express')
 const rootRouter = require('./rest/createApiRouter')()
 
-module.exports = ()=>express()
-.use(rootRouter)
+module.exports = ({ db })=>express()
 .use(express.static('./public'))
+.use(rootRouter)

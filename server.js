@@ -1,7 +1,7 @@
 const http = require('http')
 
-const db = require('./database/createDataBase')
-const api =require('./api/createExpressApp')({ db })
+const db = require('./database/createDataBase')()
+const api =require('./api/createExpressApi')({ db })
 
 const server = http.createServer(api)
 
