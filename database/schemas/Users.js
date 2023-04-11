@@ -1,11 +1,11 @@
 const { Schema } = require('mongoose')
 
-const cursosSchemas = Schema({
-    name: String,
-    yearOfCourse: Number
+const usersSchemas = Schema({
+    username: String,
+    password: String
 })
 // alumnosSchemas.methods.saludar = function(){
 //     return `Hola ${this.nombre} ${this.apellido}`
 // }
 
-module.exports = cursosSchemas
+module.exports = usersSchemas
